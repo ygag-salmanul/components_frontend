@@ -1,13 +1,10 @@
 .wrapper {
   height: 900px;
-  width: 100%;
+
   display: flex;
+  gap: 28px;
   align-items: center;
-  justify-content: center;
-  object-fit: cover;
-  object-position: right;
-  position: relative;
-  left: 0;
+  margin: auto;
 }
 
 // .corperate-service-content {
@@ -16,5 +13,5 @@
 
 .content {
   padding-left: 162px;
-  min-width: 432px;
+  width: 432px;
 }
