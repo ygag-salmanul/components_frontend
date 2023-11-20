@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    font-size: 14px;
+    font-family: Inter;
+}
+.footer-text{
+    color: #b800c4;
+}
