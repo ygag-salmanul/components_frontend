@@ -1,15 +1,21 @@
+
 .banner-container{
     display: flex;
     align-items: center;
-    padding-right: 50px;
-    justify-content:flex-end;
-    gap: 140px;
+    // padding-right: 50px;
+    justify-content:center;
+    // gap: 140px;
     height: 500px;
     background-image: url('/images/banner.png');
     background-position: center;
     background-size: cover;
     color: #fff;
 
+}
+.banner-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .banner-card-container{
     display: flex;
@@ -23,7 +29,7 @@
 }
 .banner-card{
     width: 494px;
-    height: 198px;
+    height: 202px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     background-position: center;
@@ -41,6 +47,14 @@
     @extend .banner-card;
     background-image: url('/images/banner-card-2.png');
 
+}
+.banner-text--h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.banner-text--p{
+    font-size: 30px;
+    margin-top: 15px;
 }
 .text-main{
     font-size: 50px;
