@@ -15,9 +15,9 @@ const Banner = () => {
           </div>
           <div className={styles["banner-card-container"]}>
             <div className={styles["banner-card"]}>
-              <h2>
+              <h3 className={styles["text-main"]}>
                 Buy a Gift Card <br />
-              </h2>
+              </h3>
               <p className={styles["text-secondary"]}>
                 Enjoy endless Shopping
                 <br /> Options at Nakheel Mall
@@ -25,9 +25,9 @@ const Banner = () => {
               <div className={styles["card-button"]}>Buy Gift Card</div>
             </div>
             <div className={styles["banner-card-2"]}>
-              <h2>
+              <h3  className={styles["text-main"]}>
                 Activate Your Gift Card <br />
-              </h2>
+              </h3>
               <p className={styles["text-secondary"]}>
                 Unlock the power of your
                 <br />
