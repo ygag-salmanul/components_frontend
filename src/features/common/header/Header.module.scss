@@ -1,7 +1,8 @@
 .header-main{
     display: flex;
+    padding: 0px 48px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #fff;
     font-size: 16px;
     font-family: Inter;
@@ -40,4 +41,10 @@
     @extend .header-links;
     gap:20px;
     color:#b0776c;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
