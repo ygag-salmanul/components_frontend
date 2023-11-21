@@ -10,33 +10,38 @@
     height:100px;
     display: flex; 
 }
-.header-logo{
-    display: flex;
-    width:152px;
-    height: 65%;
-    object-fit: contain;
+.header-logo {
+  display: flex;
+  width: 152px;
+  height: 65%;
+  object-fit: contain;
 }
-.header-links{
-    
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    button{
-        padding: 10px 20px;
-    }
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  button {
+    padding: 10px 20px;
+  }
 }
-.login-btn{
-    border: 1px solid #b0776c;
-    color:#b0776c ;
-    border-radius: 8px;
-    background-color: #fff;
+.login-btn {
+  border: 1px solid #b0776c;
+  color: #b0776c;
+  border-radius: 8px;
+  background-color: #fff;
 }
-.register-btn{
-    border-radius: 8px;
-    background-color:#b0776c ;
-    border: 0;
-    color: #fff;
+.register-btn {
+  border-radius: 8px;
+  background-color: #b0776c;
+  border: 0;
+  color: #fff;
 }
+.btn-container {
+  @extend .header-links;
+  gap: 20px;
+  color: #b0776c;
+}
+
 .btn-container{
     @extend .header-links;
     gap:20px;
@@ -48,3 +53,4 @@
     display: flex;
     justify-content: center;
 }
+

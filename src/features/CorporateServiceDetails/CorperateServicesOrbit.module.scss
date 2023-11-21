@@ -1,0 +1,150 @@
+@use "sass:math";
+
+@mixin rounded-box($radius) {
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+}
+
+.corperate-services-orbit {
+  min-width: 900px;
+  min-height: 900px;
+  position: relative;
+
+  &__container {
+    list-style: none;
+  }
+
+  // Render rings
+  $lastRing: 2;
+  @for $i from 0 through $lastRing {
+    &__ring-#{$i} {
+      // decrease each ring in size
+      @extend .absolute-center;
+      @extend .ring-styles;
+      width: 500px + ($i * 200);
+      height: 500px + ($i * 200);
+      opacity: math.div(1, math.pow(2, $i));
+    }
+  }
+
+  &__center {
+    @extend .center-orbit-borders;
+    @extend .flex-center;
+    background-color: #fff;
+    cursor: pointer;
+
+    &::after {
+      @extend .center-orbit-borders;
+      content: "";
+      background-color: transparent;
+      opacity: 0.3;
+    }
+  }
+
+  &__content-ring {
+    @extend .absolute-center;
+
+    &__revolving {
+      list-style: none;
+      animation: clockwiseRotate 35s linear infinite;
+      @include rounded-box(600px);
+
+      &__item {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        animation: counterClockwiseRotate 35s linear infinite;
+        white-space: nowrap;
+
+        &:nth-child(1) {
+          top: 0;
+          left: 0;
+        }
+
+        &:nth-child(2) {
+          top: 0;
+          left: 75%;
+        }
+
+        &:nth-child(3) {
+          top: 75%;
+          left: 75%;
+        }
+
+        &:nth-child(4) {
+          top: 75%;
+          left: 0;
+        }
+
+        &__name {
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          color: #1f1f1f;
+        }
+
+        &__image {
+          @extend .flex-center;
+          background-color: #f2f5f8;
+          @include rounded-box(81px);
+        }
+      }
+    }
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ring-styles {
+  border: solid 1px #d8d8d8;
+  border-radius: 50%;
+}
+
+.center-orbit-borders {
+  @extend .absolute-center;
+  border: 20px solid #f2f5f8;
+  @include rounded-box(160px);
+
+  &:hover {
+    @include rounded-box(180px);
+    transition: width ease-out 0.3s, height ease-out 0.3s;
+  }
+
+  &:not(:hover) {
+    transition: width ease-in 0.3s, height ease-in 0.3s;
+  }
+}
+
+/*
+animations
+*/
+@keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
