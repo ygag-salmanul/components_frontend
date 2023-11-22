@@ -5,6 +5,7 @@ import CorporateServiceDetails from "@/features/CorporateServiceDetails/Corporat
 import Header from "@/features/common/header/Header";
 import Banner from "@/features/banner/Banner";
 import Footer from "@/features/common/footer/Footer";
+import Accordions from "@/features/accordion/Accordion";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Banner />
       <CorporateServiceDetails />
+      <Accordions/>
       <Footer />
     </main>
   );
