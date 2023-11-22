@@ -1,0 +1,46 @@
+.content{
+    padding: 80px 162px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.content-p{
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 12px;
+    color: #000000;
+}
+.content-main{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+.accordion-wrapper{
+    display: flex;
+    flex-direction: column;
+    ul{
+        padding-left: 20px;
+    }
+    
+}
+.accordion{
+    // border-top:1px solid #dee5ed;
+    border-bottom:1px solid #dee5ed ;
+    border-radius: 0px;
+    padding: 15px 0px;
+    box-shadow: none;
+    & .MuiAccordionSummary-expandIconWrapper.Mui-expanded{
+        background-color: red ;
+        // -webkit-transform:rotate(45deg) ;
+    }
+}
+.content-faq{
+    color: #b0776c;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content-faq-primary{
+    @extend .content-faq;
+    color: #1f1f1f;
+
+}
