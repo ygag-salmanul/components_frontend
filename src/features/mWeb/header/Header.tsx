@@ -9,7 +9,7 @@ const Header = () => {
       <img src="./images/company-logo.png" alt="logo" />
       </Link>
       <div className={styles["header-links"]}>
-        <Link href={"/"}>العربية</Link>
+        <Link className={styles["language"]} href={"/"}>العربية</Link>
         <Link className={styles["menu-icon"]} href={"/"}><MenuRoundedIcon/></Link>
       </div>
 

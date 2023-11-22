@@ -4,8 +4,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import AddIcon from '@mui/icons-material/Add';
-
-import { style } from "@mui/system";
 const Accordions = () => {
   return (
     <div className={`${styles["content"]} wrapper`}>
