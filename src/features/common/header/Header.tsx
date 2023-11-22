@@ -17,7 +17,7 @@ const Header = () => {
           <Link href={"/"}>FAQ</Link>
         </div>
         <div className={styles["btn-container"]}>
-          <Link href={"/"}>English</Link>
+          <Link href={"/"}>العربية</Link>
           <button className={styles["login-btn"]}>Login</button>
           <button className={styles["register-btn"]}>Register</button>
         </div>
