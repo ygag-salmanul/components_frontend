@@ -2,7 +2,7 @@
 import styles from './RegisterForm.module.scss'
 import Link from "next/link";
 
-const RegisterForm = ({ isOtpVerification = true }) => {
+const RegisterForm = ({ isOtpVerification = false }) => {
   return (
     <div className={styles.container}>
       <img
@@ -52,9 +52,8 @@ const RegisterForm = ({ isOtpVerification = true }) => {
         </>
       )}
       <div className={styles["submit-btn__container"]}>
-        <button className={styles["submit-btn"]}>
-          {isOtpVerification ? "Login" : "Request Verification Code"}
-        </button>
+        {isOtpVerification?<Link href={"/home"}><button className={styles["submit-btn"]}>Create Account</button></Link>:<button className={styles["submit-btn"]}>Request Verification Code</button>}
+        
       </div>
     </div>
   );

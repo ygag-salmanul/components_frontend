@@ -13,7 +13,11 @@ import RegisterForm from "@/features/mWeb/registerForm/RegisterForm";
 export default function Home() {
   return (
     <main className={styles.main}>
-    <RegisterForm/>
+    <Header/>
+    <Banner/>
+    <CorporateService/>
+    <Accordions/>
+    <Footer/>
     </main>
   );
 }
