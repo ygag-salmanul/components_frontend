@@ -8,16 +8,13 @@ import Footer from "@/features/mWeb/footer/Footer";
 import Accordions from "@/features/mWeb/accordion/Accordion";
 import LoginForm from "@/features/loginForm/LoginForm";
 import CorporateService from "@/features/mWeb/corporateService/CorporateService";
-import RegisterForm from "@/features/mWeb/registerForm/RegisterForm";
+import RegisterForm from "@/features/registerForm/RegisterForm";
+
 
 export default function Home() {
   return (
     <main className={styles.main}>
-    <Header/>
-    <Banner/>
-    <CorporateService/>
-    <Accordions/>
-    <Footer/>
+      <RegisterForm/>
     </main>
   );
 }
