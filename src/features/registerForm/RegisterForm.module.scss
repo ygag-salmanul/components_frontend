@@ -1,18 +1,44 @@
-.container {
-    padding: 24px 16px;
-  }
-  
+.main{
+    display: flex;
+    justify-content: space-between;
+    &-img{
+        width: 50%;
+        height: 100vh;
+        background-image: url('/images/Register-image.png');
+        background-position: center;
+        background-size: cover;
+    }
+    &-form-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        min-width: 546px;
+        padding-top: 60px;
+        margin-right: 48px;
 
-  
-  .dimmed-text {
+        &-logo{
+            width: 151.7px;
+            height: 70px;
+        }
+    }
+
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f1f1f;
+  }
+.dimmed-text {
     font-size: 14px;
     font-weight: normal;
     color: #8e8e8e;
-    margin: 16px 0 40px;
+    margin-top: 16px;
   }
   
   .highlighted-text {
     color: #1f1f1f;
+
     font-weight: 600;
   }
   
@@ -69,10 +95,6 @@
     font-weight: 600;
     color: #fff;
     font-family: inherit;
-  
-    &__container {
-      margin-top: 40px;
-    }
   }
   
   .remove-default-input-styles {
@@ -83,4 +105,16 @@
     -o-appearance: none;
     border: none;
     background: none;
+  }
+  .name-field-wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+  }
+
+  .name-field{
+    width: 50%;
+
   }
