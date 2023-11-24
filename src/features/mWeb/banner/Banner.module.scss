@@ -11,8 +11,6 @@
         align-items: start;
         justify-content:center;
         gap: 24px;
-        max-width: 375px;
-        margin: 0 auto;
         padding: 24px 16px;
         &-text-content{
             display: flex;
@@ -69,6 +67,7 @@
 .card-styles {
         width: 343px;
         height: 140px;
+        border-radius: 6px;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
