@@ -1,18 +1,18 @@
-import Accordions from "@/features/mWeb/accordion/Accordion"
-import Banner from "@/features/mWeb/banner/Banner"
-import CorporateService from "@/features/mWeb/corporateService/CorporateService"
-import Footer from "@/features/mWeb/footer/Footer"
-import Header from "@/features/mWeb/header/Header"
+import CorporateServiceDetails from "@/features/CorporateServiceDetails/CorporateServiceDetails"
+import Accordions from "@/features/accordion/Accordion"
+import Banner from "@/features/banner/Banner"
+import Footer from "@/features/common/footer/Footer"
+import Header from "@/features/common/header/Header"
 
 const Home=()=>{
     return(
-        <>
+        <div>
         <Header/>
         <Banner/>
-        <CorporateService/>
+        <CorporateServiceDetails/>
         <Accordions/>
         <Footer/>
-        </>
+        </div>
     )
 }
 export default Home

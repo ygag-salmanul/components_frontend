@@ -21,7 +21,21 @@ a {
   max-width: 1440px;
   margin: 0 auto;
 }
-.landing-accordion{
+
+.landing-accordion {
+  .MuiAccordion-root{
+    box-shadow:  none;
+    
+  }
+  .MuiAccordionSummary-root{
+    padding: 0;
+  }
+  .MuiAccordion-root:first-of-type{
+    border-top: 1px solid #dee5ed;
+  }
+  .MuiAccordion-root:last-of-type{
+    border-bottom: 1px solid #dee5ed;
+  }
   .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
     transform: rotate(135deg);
   }

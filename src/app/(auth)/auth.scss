@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+   width: 100%;
+  //  max-width: 1520px;
+  //  margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+
+    &__img{
+        max-width: 50%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: right;
+        width: auto;
+
+        // background-image: url('/images/Register-image.png');
+        // background-position: center;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+    }
+    &__form-contents{
+        margin-right: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 50%;
+        min-width: 45%;
+        &-logo{
+            width: 151.7px;
+            height: 70px;
+        }
+    }
+
+}
+.loginlayout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+  .progressive-img {
+    max-width: 50%;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    object-position: right;
+
+    @media all and (max-width: 1400px){
+        object-fit: cover;
+        background-size:100% ;
+    }
+  }
+
+  .background-container{
+    // width: 50%;
+    // background-image: url('/images/Register-image.png');
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+  }
+  
+  .form-section{
+    padding: 60px 48px 60px 138px;
+    width: 50%;
+  }

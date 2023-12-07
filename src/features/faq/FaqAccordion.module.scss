@@ -1,5 +1,5 @@
 .content{
-    padding: 80px 162px;
+    padding: 40px 162px 0px 162px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -32,6 +32,9 @@
     & .MuiAccordionSummary-expandIconWrapper.Mui-expanded{
         background-color: red ;
         // -webkit-transform:rotate(45deg) ;
+    }
+    ul{
+        padding-left: 20px;
     }
 }
 .content-faq{

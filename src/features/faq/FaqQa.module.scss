@@ -1,0 +1,36 @@
+.content{
+    padding: 40px 162px 0px 162px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    &__p{
+        font-size: 14px;
+        font-weight: normal;
+        padding-bottom: 12px;
+        color: #000000;
+    }
+    &__main{
+        font-size: 32px;
+        font-weight: 600;
+        color: #0e0000;
+    }
+    &__description-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: #1f1f1f;
+        font-size: 20px;
+        line-height: 1.5;
+        &__heading{
+            font-weight: 600;
+            
+        }
+        &__description{
+            // font-weight: 500;
+        }
+        &__description-end{
+            font-style: italic;
+
+        }
+    }
+}

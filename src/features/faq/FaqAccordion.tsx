@@ -1,22 +1,17 @@
-import styles from "./Accordion.module.scss";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
+import styles from './FaqAccordion.module.scss'
 import AddIcon from '@mui/icons-material/Add';
-import Link from "next/link";
-const Accordions = () => {
+const FaqAccordion = () => {
   return (
     <div className={`${styles["content"]} wrapper`}>
       <div className="">
-        <p className={styles["content-p"]}>#All the help you need</p>
-        <h3 className={styles["content-main"]}>We know you are curious!</h3>
+        <p className={styles["content-p"]}>We know you are curious!</p>
+        <h3 className={styles["content-main"]}>Frequently Asked Questions</h3>
       </div>
       <div className={`styles["accordion-wrapper"] landing-accordion`}>
-        <Accordion className={styles["accordion"]} >
-          <AccordionSummary
-            expandIcon={<AddIcon fontSize="large"/>}
-          >
+        <Accordion className={styles["accordion"]}>
+          <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
             <Typography fontSize={20} height={32}>
               Where can I use my Nakheel Mall Gift Card?
             </Typography>
@@ -29,7 +24,7 @@ const Accordions = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={styles["accordion"]} >
+        <Accordion className={styles["accordion"]}>
           <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
             <Typography fontSize={20}>
               How can I purchase a Nakheel Mall Gift Card?
@@ -43,7 +38,7 @@ const Accordions = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion defaultExpanded  className={styles["accordion"]} >
+        <Accordion defaultExpanded className={styles["accordion"]}>
           <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
             <Typography fontSize={20}>
               How do I activate my Nakheel Mall Gift Card?
@@ -75,7 +70,63 @@ const Accordions = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={styles["accordion"]} >
+        <Accordion className={styles["accordion"]}>
+          <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
+            <Typography fontSize={20}>
+              How can I check the balance on my Gift Card?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography fontSize={16}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className={styles["accordion"]}>
+          <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
+            <Typography fontSize={20}>
+              How can I check the balance on my Gift Card?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography fontSize={16}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className={styles["accordion"]}>
+          <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
+            <Typography fontSize={20}>
+              How can I check the balance on my Gift Card?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography fontSize={16}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className={styles["accordion"]}>
+          <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
+            <Typography fontSize={20}>
+              How can I check the balance on my Gift Card?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography fontSize={16}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className={styles["accordion"]}>
           <AccordionSummary expandIcon={<AddIcon fontSize="large" />}>
             <Typography fontSize={20}>
               How can I check the balance on my Gift Card?
@@ -90,11 +141,7 @@ const Accordions = () => {
           </AccordionDetails>
         </Accordion>
       </div>
-      <p className={styles["content-faq-primary"]}>
-        Still have questions?{" "}
-        <Link href={'/faq'} className={styles["content-faq"]}> Visit the FAQ page</Link>
-      </p>
     </div>
   );
 };
-export default Accordions;
+export default FaqAccordion;
